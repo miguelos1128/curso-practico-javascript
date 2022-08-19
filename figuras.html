@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras Geometricas | Curso practico de Java Script</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 1024px)" />
 </head>
 <body>
     <header>
@@ -13,41 +14,45 @@
         <p>Este es el primer taller del curso practico de JavaScript</p>
     </header>
     <main>
-        <section class="main-cards">
-            <h2>CUADRADO</h2>
-            <img src="./assets/cuadrado.png" alt="Imagen de un cuardado">
-            <form action="">
-                <label for="inputCuadrado" >Escribe cuanto mide cada lado de su cuadrado en centimetros</label>
-                <input id="inputCuadrado" placeholder="Lado" type="number"/>
-                <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el Perímetro</button>
-                <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
-            </form>
-        </section>
-    
-        <section class="main-cards">
-            <h2 >TRIÁNGULO</h2>
-            <img src="./assets/triangulo.png" alt="Imagen de un triangulo Isoceles">
-            <form action="">
-                <label for="inputTringuloLadoA" >Escribe cuanto mide cada lado de los trinagulos y su base en centimetros.</label>
-                <input id="inputTringuloLadoA" placeholder="Lado A" type="number"/>
-                
-                <input id="inputTrianguloLadoB" placeholder="Lado B" type="number"/>
-                
-                <input id="inputTriaguloBase" placeholder="Base" type="number"/>
-                <button type="button" onclick="calcularPerimetroTraignulo()">Calcular el Perímetro</button>
-                <button type="button" onclick="calcularAreaTraignulo()">Calcular el área</button>
-            </form>
-        </section>
-    
-        <section class="main-cards">
-            <h2>CÍRULO</h2>
-            <img src="./assets/circulo.png" alt="Imagen de un circulo">
-            <form action="">
-                <label for="inputRadio" >Escribe cuanto mide el Radio del circulo en ceintimetros.</label>
-                <input id="inputRadio" placeholder="Radio" type="number"/>
-                <button type="button" onclick="calcularPerimetroCirculo()">Calcular el Perímetro</button>
-                <button type="button" onclick="calacularAreaCirculo()">Calcular el área</button>
-            </form>
+        <section class="main-container">
+            <section class="main-cards">
+                <h2>CUADRADO</h2>
+                <img src="./assets/cuadrado.png" alt="Imagen de un cuardado">
+                <form action="">
+                    <label for="inputCuadrado" >Escribe cuanto mide cada lado de su cuadrado en centimetros</label>
+                    <input id="inputCuadrado" placeholder="Lado" type="number"/>
+                    <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el Perímetro</button>
+                    <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+                </form>
+            </section>
+        
+            <section class="main-cards">
+                <h2 >TRIÁNGULO</h2>
+                <img src="./assets/triangulo.png" alt="Imagen de un triangulo Isoceles">
+                <form action="">
+                    <label for="inputTringuloLadoA" >Escribe cuanto mide cada lado de los trinagulos y su base en centimetros.</label>
+                    <div class="main-cards--input_container">
+                        <input id="inputTringuloLadoA" placeholder="Lado A" type="number"/>
+                        
+                        <input id="inputTrianguloLadoB" placeholder="Lado B" type="number"/>
+                        
+                        <input id="inputTriaguloBase" placeholder="Base" type="number"/>
+                    </div>
+                    <button type="button" onclick="calcularPerimetroTraignulo()">Calcular el Perímetro</button>
+                    <button type="button" onclick="calcularAreaTraignulo()">Calcular el área</button>
+                </form>
+            </section>
+        
+            <section class="main-cards">
+                <h2>CÍRULO</h2>
+                <img src="./assets/circulo.png" alt="Imagen de un circulo">
+                <form action="">
+                    <label for="inputRadio" >Escribe cuanto mide el Radio del circulo en ceintimetros.</label>
+                    <input id="inputRadio" placeholder="Radio" type="number"/>
+                    <button type="button" onclick="calcularPerimetroCirculo()">Calcular el Perímetro</button>
+                    <button type="button" onclick="calacularAreaCirculo()">Calcular el área</button>
+                </form>
+            </section>
         </section>
     </main>
     
