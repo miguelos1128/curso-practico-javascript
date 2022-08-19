@@ -5,46 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras Geometricas | Curso practico de Java Script</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
         <h1>Figuras Geométricas</h1>
-        <p>Este es el primer taller del curso practico de JS</p>
+        <p>Este es el primer taller del curso practico de JavaScript</p>
     </header>
+    <main>
+        <section class="main-cards">
+            <h2>CUADRADO</h2>
+            <img src="./assets/cuadrado.png" alt="Imagen de un cuardado">
+            <form action="">
+                <label for="inputCuadrado" >Escribe cuanto mide cada lado de su cuadrado en centimetros</label>
+                <input id="inputCuadrado" placeholder="Lado" type="number"/>
+                <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el Perímetro</button>
+                <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+            </form>
+        </section>
     
-    <section>
-        <h2>Calcula el area y el perimetro de un cuadrado</h2>
-        <form action="">
-            <label for="inputCuadrado" >Escribe cuanto mide cada lado de tu cuadrado</label>
-            <input id="inputCuadrado" type="number"/>
-            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el Perímetro</button>
-            <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
-        </form>
-    </section>
-
-    <section>
-        <h2>Calcula el area y el perimetro de un Triagnulo Isoceles</h2>
-        <form action="">
-            <label for="inputTringuloLadoA" >Escribe cuanto mide el lado izquierdo del Triangulo</label>
-            <input id="inputTringuloLadoA" type="number"/>
-            <label for="inputTrianguloLadoB" >Escribe cuanto mide el lado derecho del triangulo</label>
-            <input id="inputTrianguloLadoB" type="number"/>
-            <label for="inputTriaguloBase" >Escribe cuanto mide la base del triangulo</label>
-            <input id="inputTriaguloBase" type="number"/>
-            <button type="button" onclick="calcularPerimetroTraignulo()">Calcular el Perímetro</button>
-            <button type="button" onclick="calcularAreaTraignulo()">Calcular el área</button>
-        </form>
-    </section>
-
-    <section>
-        <h2>Calcula el area y el perimetro de un Triagnulo Isoceles</h2>
-        <form action="">
-            <label for="inputRadio" >Escribe cuanto mide el Radio del circulo</label>
-            <input id="inputRadio" type="number"/>
-            <button type="button" onclick="calcularPerimetroCirculo()">Calcular el Perímetro</button>
-            <button type="button" onclick="calacularAreaCirculo()">Calcular el área</button>
-        </form>
-    </section>
+        <section class="main-cards">
+            <h2 >TRIÁNGULO</h2>
+            <img src="./assets/triangulo.png" alt="Imagen de un triangulo Isoceles">
+            <form action="">
+                <label for="inputTringuloLadoA" >Escribe cuanto mide cada lado de los trinagulos y su base en centimetros.</label>
+                <input id="inputTringuloLadoA" placeholder="Lado A" type="number"/>
+                
+                <input id="inputTrianguloLadoB" placeholder="Lado B" type="number"/>
+                
+                <input id="inputTriaguloBase" placeholder="Base" type="number"/>
+                <button type="button" onclick="calcularPerimetroTraignulo()">Calcular el Perímetro</button>
+                <button type="button" onclick="calcularAreaTraignulo()">Calcular el área</button>
+            </form>
+        </section>
+    
+        <section class="main-cards">
+            <h2>CÍRULO</h2>
+            <img src="./assets/circulo.png" alt="Imagen de un circulo">
+            <form action="">
+                <label for="inputRadio" >Escribe cuanto mide el Radio del circulo en ceintimetros.</label>
+                <input id="inputRadio" placeholder="Radio" type="number"/>
+                <button type="button" onclick="calcularPerimetroCirculo()">Calcular el Perímetro</button>
+                <button type="button" onclick="calacularAreaCirculo()">Calcular el área</button>
+            </form>
+        </section>
+    </main>
+    
 
     <script src="./figuras.js"></script>
 </body>
